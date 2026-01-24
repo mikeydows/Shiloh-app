@@ -152,3 +152,11 @@ document.addEventListener("touchstart", (e) => {
         openNavbar();
     }
 })
+
+//video
+document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("bg-video");
+    video.play().catch(() => {
+        console.log("Autoplay blocked");
+    });
+});
