@@ -1,0 +1,485 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-color: gold;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+header .logo{
+    display: flex;
+    width: 20%;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    width: 60%;
+}
+
+.navbar2{
+    display: none;
+}
+
+.navbar nav ol{
+    display: flex; 
+    gap: 3em;
+    align-items: center;
+}
+
+.navbar nav ol li{
+    list-style-type: none;
+}
+
+.navbar nav ol li a{
+    color: gold;
+    transition: all 0.3s;
+}
+
+.navbar nav ol li a:hover{
+    border-bottom: 5px gold solid;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.portfolio a{
+    background-color: gold;
+    color: black;
+    padding:  7px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.portfolio a:hover{
+    background-color: white;
+}
+
+.heading{
+    overflow: hidden;
+}
+
+.heading video{
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: -2;
+}
+
+.heading .head{
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+.heading .head h3{
+    padding: 20px;
+    font-weight: bold;
+    width: 99%;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.heading .head h1{
+    font-size: 10em;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+}
+
+.heading .buttons{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+}
+
+.heading .buttons a{
+    color: black;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 50px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.heading .buttons a:hover{
+    background-color: goldenrod;
+    transition: all 0.2s;
+}
+
+.services{
+    background-color: white;
+    padding: 180px;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.services h1{
+    text-align: center;
+}
+.services .service{
+    width: 100%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+    justify-content: center;
+}
+
+.services .service h2{
+    color: goldenrod;
+}
+
+.services .service img{
+    height: 24px;
+    margin: 0 16px 0 2px;
+}
+
+.service1, .service2, .service3, .service4, .service5, .service6{
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px 0.1px;
+    width: 20%;
+    text-align: center;
+}
+
+@keyframes moveUp {
+    from{
+        opacity: 0;
+        top: 50px;
+    }
+
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+#social1, #social2, #social3, #social4, #social5, #social6{
+    display: none;
+    position: relative;
+    top: 50px;
+    animation-name: moveUp;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2s;
+    animation-play-state: paused;
+}
+
+.services .buttons button{
+    width: 100%;
+    background-color: gold;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 1em;
+    margin: 20px 0 10px 0;
+    transition: all 0.2s;
+}
+
+.services .buttons button:hover{
+    background-color: goldenrod;
+    transition: all 0.2s;
+}
+
+footer{
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    width: 70%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.footer .page{
+    margin: 0;
+    position: relative;
+    top: 0;
+    color: white;
+}
+
+.footer a{
+    color: white;
+    text-decoration: underline;
+    display: block;
+}
+
+.footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo img{
+    width: 150px;
+}
+
+.footer .logo h1{
+    color: white;
+    font-size: 3em;
+}
+
+.navigate{
+    display: none;
+}
+/**phone size**/
+@media (max-width:700px) {
+    .navbar{
+        display: none;
+    }
+
+    .navbar2{
+        display: block;
+        z-index: 2;
+        width: 10%;
+    }
+
+    .navbar2 img{
+        width: 26px;
+        text-align: right;
+        position: relative;
+        right: -20px;
+        cursor: pointer;
+    }
+
+    header{
+        backdrop-filter: blur(0);
+        background-color: white;
+    }
+
+    header .logo{
+        position: relative;
+        left: -20px;
+        width: 50%;
+        text-align: left;
+        align-items: center;
+    }
+
+    header .logo img{
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(0 1px 0.1px);
+    }
+
+    .heading video{
+        position: absolute;
+        width: 96%;
+    }
+
+    .heading .head h1{
+        font-size: 3.4em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .heading .buttons{
+        margin: 40px auto;
+        display: block;
+        gap: 10px;
+        text-align: center;
+        width: 99%;
+        height: 100px;
+    }
+
+    .heading .buttons a{
+        width: 100%;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 16px 30px;
+        border-radius: 10px;
+    }
+
+    #btn1{
+        margin: 20px 0;
+        padding: 16px 110px;
+    }
+
+    #btn2{
+        position: relative;
+        bottom: -50px;
+        padding: 16px 90px;
+    }
+
+    .services{
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .services .service{
+        gap: 1em;
+    }
+
+    .service1, .service2, .service3, .service4, .service5, .service6{
+        width: 90%;
+    }
+
+    .footer{
+        display: block;
+        gap: 0.1px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .footer .page{
+        margin: 0 auto 20px auto;
+        width: 100%;
+    }
+
+    .footer .logo img{
+        width: 70px;
+    }
+
+    .footer .logo h1{
+        color: gold;
+        font-size: 2em;
+    }
+
+    @keyframes open {
+        from{left:-300px}
+        to{left:0}
+    }
+
+    @keyframes close {
+        from{left:0px}
+        to{left: -300px}
+    }
+ 
+    .navigate{
+        display: block;
+        background-color: white;
+        border-radius: 0 30px 30px 0;
+        box-shadow: 0 0 3px 0.1px;
+        width: 70%;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        height: 100%;
+        margin: 0 auto;
+        left: -300px;
+        animation-duration: 0.4s;
+        animation-fill-mode: forwards;
+    }
+
+    .navigate .serve{
+        margin: 10px 20px;
+    }
+
+    .navigate .serve button{
+        color: black;
+        background-color: rgb(236, 228, 228);
+        padding: 30px ;
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        border: white;
+        display: flex;
+        font-size: 1.1em;
+        align-items: center;
+        text-align: center;
+    }
+    .navigate .serve a{
+        color: black;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .navigate .serve img{
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    .navigate p{
+        transform: translateY(160px);
+        margin-left: 27px;
+        font-size: 1.2em;
+    }
+
+    .navigate .socials{
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        margin: 20px auto;
+        text-align: center;
+        left: 10%;
+    }
+
+    .navigate #close{
+        width: 30px;
+        margin: 30px;
+        cursor: pointer;
+    }
+
+    .navigate .socials img{
+        height: 30px;
+    }
+
+    .open {
+        display: block;
+        animation-name: slideIn;
+    }
+
+    .close {
+        animation-name: slideOut;
+    }
+
+    #navbar.open {
+        display: block;
+        animation-name: slideIn;
+    }
+
+    #navbar.close {
+        animation-name: slideOut;
+    }
+
+    #overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        display: none;
+        z-index: 1;
+        backdrop-filter: blur(25px);
+    }
+
+
+    @keyframes slideIn {
+        from { left: -300px; }
+        to { left: 0; }
+    }
+
+    @keyframes slideOut {
+        from { left: 0; }
+        to { left: -300px; }
+    }
+}
