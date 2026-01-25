@@ -340,6 +340,10 @@ footer{
         margin: 20px 0;
     }
 
+    .services a{
+        color: black;
+    }
+
     .services .service{
         gap: 1em;
     }
