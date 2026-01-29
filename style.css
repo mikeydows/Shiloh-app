@@ -253,7 +253,7 @@ footer{
     display: none;
 }
 /**phone size**/
-@media (max-width:700px) {
+@media (max-width:900px) {
     .navbar{
         display: none;
     }
@@ -389,7 +389,6 @@ footer{
     }
  
     .navigate{
-        display: block;
         background-color: white;
         border-radius: 0 30px 30px 0;
         box-shadow: 0 0 3px 0.1px;

@@ -78,7 +78,6 @@ header .logo{
     background-size: cover;
     color: white;
     padding: 30px 100px;
-    overflow-y: hidden;
 }
 
 .head h1{
@@ -86,7 +85,6 @@ header .logo{
     width: 30%;
     margin: 100px 0 0 0.5em;
     color: goldenrod;
-    font-weight: bolder;
 }
 
 .head h3{
@@ -166,6 +164,7 @@ header .logo{
 
 .proficient .images{
     display: flex;
+    gap: 2em;
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -279,13 +278,16 @@ header .logo{
 }
 
 .work_with_us{
-    width: 30%;
+    width: 40%;
     margin: 20px auto;
+    text-align: center;
 }
 
 .in_touch .icons{
     display: flex;
     gap: 30px;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .in_touch .icons img{
@@ -314,7 +316,56 @@ header .logo{
     display: none;
 }
 
-@media (max-width:700px) {
+footer{
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    width: 70%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.footer .page{
+    margin: 0;
+    position: relative;
+    top: 0;
+    color: white;
+}
+
+.footer a{
+    color: white;
+    text-decoration: underline;
+    display: block;
+}
+
+.footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo img{
+    width: 150px;
+}
+
+.footer .logo h1{
+    color: white;
+    font-size: 3em;
+}
+
+
+@media (max-width:900px) {
+    body{
+        background-color: black;
+        color: white;
+    }
     .navbar{
         display: none;
     }
@@ -336,7 +387,7 @@ header .logo{
     header{
         backdrop-filter: blur(0);
         background-color: white;
-        margin: 0;
+        width: 100%;
     }
 
     header .logo{
@@ -345,17 +396,123 @@ header .logo{
         width: 51%;
         text-align: left;
         align-items: center;
+        color: black;
     }
 
-    .footer{
-        display: block;
-        gap: 0.1px;
-        width: 90%;
+    header .logo img{
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(0 1px 0.1px);
+    }
+
+    .head{
         padding: 10px;
     }
 
+    .head .headlines{
+        width: 90%;
+        margin: 70px 0 auto;
+        text-align: center;
+    }
+
+    .head h1{
+        font-size: 3.5em;
+        color: gold;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .head h3{
+        width: 99%;
+        border: 0;
+        margin: 0;
+    }
+
+    .head img{
+        position: relative;
+        left: 0%;
+        top:-80px;
+        width: 100%;
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+
+    .head .headbutton{
+        display: block;
+    }
+
+    .head .headbutton a{
+        border-radius: 50px;
+        font-size: 1.2em;
+        width: 30px;
+    }
+
+     #btn1{
+        margin: 20px 0;
+        padding: 10px 70px;
+    }
+
+    #btn2{
+        position: relative;
+        bottom: -30px;
+        padding: 10px 67px;
+    }
+
+    .subhead{
+        margin: 20px;
+    }
+
+    .marquee{
+        width: 90%;
+    }
+
+    .skills{
+        margin: 50px auto;
+    }
+    
+    .skills .container{
+        display: block;
+        width: 90%;
+    }
+
+    .skills .container .container1, .container4, .container2, .container3{
+        width: 90%;
+        background: linear-gradient(to left, black, rgb(61, 59, 59));
+        margin-bottom: 20px;
+        border: 0;
+    }
+
+    .skills .container4 .tools img{
+        filter: invert();
+    }
+
+    .work_with_us{
+        width: 90%;
+        text-align: center;
+    }
+
+    .work_with_us .icons{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .work_with_us img{
+        filter: invert();
+    }
+
+    footer{
+        background: #161515;
+    }
+    
+    .footer{
+        display: block;
+        width: 90%;
+        padding: 5px;
+    }
+
     .footer .page{
-        margin: 0 auto 20px auto;
+        margin: 20px auto;
+
         width: 90%;
     }
 
@@ -379,7 +536,6 @@ header .logo{
     }
  
     .navigate{
-        display: block;
         background-color: white;
         border-radius: 0 30px 30px 0;
         box-shadow: 0 0 3px 0.1px;
@@ -486,4 +642,5 @@ header .logo{
         from { left: 0; }
         to { left: -300px; }
     }
+
 }
