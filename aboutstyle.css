@@ -582,6 +582,7 @@ footer{
         transform: translateY(160px);
         margin-left: 27px;
         font-size: 1.2em;
+        color: black;
     }
 
     .navigate .socials{
