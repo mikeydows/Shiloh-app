@@ -299,7 +299,7 @@ footer{
     .heading .head h1{
         font-size: 3.4em;
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
 
     .heading .head h3{
@@ -312,27 +312,27 @@ footer{
         display: block;
         gap: 10px;
         text-align: center;
-        width: 99%;
+        width: 90%;
         height: 100px;
     }
 
     .heading .buttons a{
-        width: 100%;
+        width: 90%;
         font-size: 1.2em;
         font-weight: bold;
         padding: 16px 30px;
-        border-radius: 10px;
+        border-radius: 50px;
     }
 
     #btn1{
         margin: 20px 0;
-        padding: 16px 110px;
+        padding: 10px 70px;
     }
 
     #btn2{
         position: relative;
-        bottom: -50px;
-        padding: 16px 90px;
+        bottom: -30px;
+        padding: 10px 50px;
     }
 
     .services{
@@ -340,8 +340,13 @@ footer{
         margin: 20px 0;
     }
 
-    .services button{
+    .services .buttons button{
         color: black;
+        border-radius: 150px;
+        width: 80%;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 15px;
     }
 
     .services .service{
@@ -361,7 +366,7 @@ footer{
 
     .footer .page{
         margin: 0 auto 20px auto;
-        width: 100%;
+        width: 90%;
     }
 
     .footer .logo img{
@@ -406,7 +411,7 @@ footer{
     .navigate .serve button{
         color: black;
         background-color: rgb(236, 228, 228);
-        padding: 30px ;
+        padding: 16px ;
         border-radius: 10px;
         width: 100%;
         margin-bottom: 10px;

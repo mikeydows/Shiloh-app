@@ -298,8 +298,164 @@ header{
     }
 }
 
-@media (max-width:600px) {
-    body{
+.navigate{
+    display: none;
+}
+
+@media (max-width:700px) {
+    .navbar{
+        display: none;
+    }
+
+    .navbar2{
+        display: block;
+        z-index: 2;
+        width: 10%;
+    }
+
+    .navbar2 img{
+        width: 26px;
+        text-align: right;
+        position: relative;
+        right: -20px;
+        cursor: pointer;
+    }
+
+    header{
+        backdrop-filter: blur(0);
         background-color: white;
+    }
+
+    header .logo{
+        position: relative;
+        left: -20px;
+        width: 50%;
+        text-align: left;
+        align-items: center;
+    }
+
+    header .logo img{
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(0 1px 0.1px);
+    }
+
+    @keyframes open {
+        from{left:-300px}
+        to{left:0}
+    }
+
+    @keyframes close {
+        from{left:0px}
+        to{left: -300px}
+    }
+ 
+    .navigate{
+        display: block;
+        background-color: white;
+        border-radius: 0 30px 30px 0;
+        box-shadow: 0 0 3px 0.1px;
+        width: 70%;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        height: 100%;
+        margin: 0 auto;
+        left: -300px;
+        animation-duration: 0.4s;
+        animation-fill-mode: forwards;
+    }
+
+    .navigate .serve{
+        margin: 10px 20px;
+    }
+
+    .navigate .serve button{
+        color: black;
+        background-color: rgb(236, 228, 228);
+        padding: 16px ;
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        border: white;
+        display: flex;
+        font-size: 1.1em;
+        align-items: center;
+        text-align: center;
+    }
+    .navigate .serve a{
+        color: black;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .navigate .serve img{
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    .navigate p{
+        transform: translateY(160px);
+        margin-left: 27px;
+        font-size: 1.2em;
+    }
+
+    .navigate .socials{
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        margin: 20px auto;
+        text-align: center;
+        left: 10%;
+    }
+
+    .navigate #close{
+        width: 30px;
+        margin: 30px;
+        cursor: pointer;
+    }
+
+    .navigate .socials img{
+        height: 30px;
+    }
+
+    .open {
+        display: block;
+        animation-name: slideIn;
+    }
+
+    .close {
+        animation-name: slideOut;
+    }
+
+    #navbar.open {
+        display: block;
+        animation-name: slideIn;
+    }
+
+    #navbar.close {
+        animation-name: slideOut;
+    }
+
+    #overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        display: none;
+        z-index: 1;
+        backdrop-filter: blur(25px);
+    }
+
+
+    @keyframes slideIn {
+        from { left: -300px; }
+        to { left: 0; }
+    }
+
+    @keyframes slideOut {
+        from { left: 0; }
+        to { left: -300px; }
     }
 }
