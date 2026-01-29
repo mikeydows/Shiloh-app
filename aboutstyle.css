@@ -9,8 +9,7 @@ a{
 header{
     display: flex;
     width: 100%;
-    justify-content: center;
-    gap: 35em;
+    justify-content: space-around;
     margin: 0 auto;
     align-items: center;
     backdrop-filter: blur(5px);
@@ -19,11 +18,23 @@ header{
     top: 0;
 }
 
+header .logo{
+    display: flex;
+    width: 20%;
+    text-align: center;
+    color: gold;
+}
+
 .navbar{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5em;
+    width: 40%;
+}
+
+.navbar2{
+    display: none;
 }
 
 .navbar nav ol{
@@ -59,6 +70,7 @@ header{
 .portfolio a:hover{
     background-color: white;
 }
+
 
 .head{
     background-image: url('media/camera.jpg');
@@ -324,20 +336,36 @@ header{
     header{
         backdrop-filter: blur(0);
         background-color: white;
+        margin: 0;
     }
 
     header .logo{
         position: relative;
         left: -20px;
-        width: 50%;
+        width: 51%;
         text-align: left;
         align-items: center;
     }
 
-    header .logo img{
-        width: 30px;
-        height: 30px;
-        filter: drop-shadow(0 1px 0.1px);
+    .footer{
+        display: block;
+        gap: 0.1px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .footer .page{
+        margin: 0 auto 20px auto;
+        width: 90%;
+    }
+
+    .footer .logo img{
+        width: 70px;
+    }
+
+    .footer .logo h1{
+        color: gold;
+        font-size: 2em;
     }
 
     @keyframes open {
