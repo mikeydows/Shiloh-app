@@ -427,7 +427,7 @@ footer{
     }
 
     .navigate p{
-        transform: translateY(360px);
+        transform: translateY(300px);
         margin-left: 27px;
         font-size: 1.2em;
     }
