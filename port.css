@@ -1,0 +1,127 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-color: gold;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+header .logo{
+    display: flex;
+    width: 20%;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    width: 40%;
+}
+
+.navbar2{
+    display: none;
+}
+
+.navbar nav ol{
+    display: flex; 
+    gap: 3em;
+    align-items: center;
+}
+
+.navbar nav ol li{
+    list-style-type: none;
+}
+
+.navbar nav ol li a{
+    color: gold;
+    transition: all 0.3s;
+}
+
+.navbar nav ol li a:hover{
+    border-bottom: 5px gold solid;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.portfolio a{
+    background-color: gold;
+    color: black;
+    padding:  7px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.portfolio a:hover{
+    background-color: white;
+}
+
+footer{
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    width: 70%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.footer .page{
+    margin: 0;
+    position: relative;
+    top: 0;
+    color: white;
+}
+
+.footer a{
+    color: white;
+    text-decoration: underline;
+    display: block;
+}
+
+.footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo img{
+    width: 150px;
+}
+
+.footer .logo h1{
+    color: white;
+    font-size: 3em;
+}
+
+.navigate{
+    display: none;
+}
+
+@media (max-width:900px) {
+    body{
+        background-color: white;
+    }
+}
