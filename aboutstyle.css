@@ -452,11 +452,6 @@ footer{
         padding: 10px 70px;
     }
 
-    #btn2{
-        position: relative;
-        bottom: -30px;
-        padding: 10px 67px;
-    }
 
     .subhead{
         margin: 20px;
@@ -485,6 +480,20 @@ footer{
     .skills .container4 .tools img{
         filter: invert();
     }
+
+    .skills .container a{
+        display: inline-block;
+        width: 70%;
+    }
+
+    .skills .container a:hover{
+        color:black;
+    }
+
+    .skills .container .container4 #portfolio_btn1{
+        transform: translateY(10px);
+    }
+
 
     .work_with_us{
         width: 90%;
@@ -554,12 +563,12 @@ footer{
         margin: 10px 20px;
     }
 
-    .navigate .serve button{
+.navigate .serve a{
         color: black;
         background-color: rgb(236, 228, 228);
-        padding: 16px ;
+        padding: 10px ;
         border-radius: 10px;
-        width: 100%;
+        width: 90%;
         margin-bottom: 10px;
         border: white;
         display: flex;
@@ -567,14 +576,9 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .navigate .serve a{
-        color: black;
-        padding: 30px;
-        text-align: center;
-    }
 
     .navigate .serve img{
-        width: 30px;
+        width: 20px;
         margin-right: 20px;
     }
 

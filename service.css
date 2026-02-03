@@ -121,6 +121,18 @@ footer{
 }
 
 @media (max-width:900px) {
+    body{
+        background-color: white;
+    }
+
+    .head{
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .head .mainhead{
+        margin-top: 100px;
+    }
     .navbar{
         display: none;
     }
@@ -156,6 +168,65 @@ footer{
         width: 30px;
         height: 30px;
         filter: drop-shadow(0 1px 0.1px);
+    }
+
+    .service .serviceContainer{
+        margin: 10px auto;
+    }
+
+    .service .serviceContainer .service1{
+        width: 90%;
+        box-shadow: 0 0 3px 0.5px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 10px auto;
+    }
+
+    .service .serviceContainer .service1 img{
+        width: 100%;
+    }
+
+    .service .serviceContainer .icon{
+        background-color: white;
+        padding: 20px;
+        border-radius: 50%;
+        margin: 10px auto;
+        position: absolute;
+        text-align: center;
+        left: 39%;
+        bottom: 100px;
+    }
+
+    .service .serviceContainer .icon img{
+        width: 40px;
+    }
+
+    .head1{
+        margin: 30px;
+    }
+
+    .service .serviceContainer a{
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        background-color: gold;
+        color: black;
+        padding: 10px;
+        border-radius: 40px;
+        font-size: 1.2em;
+        transition: all 0.3s;
+        margin: auto;
+    } 
+    
+    .service .serviceContainer a:hover{
+        background-color: white;
+        transition: all 0.3s;
+        font-weight: bold;
+    }
+    
+    .service .serviceContainer .link{
+        margin: 30px auto;
+        text-align: center;
     }
 
     .footer{
@@ -208,12 +279,12 @@ footer{
         margin: 10px 20px;
     }
 
-    .navigate .serve button{
+    .navigate .serve a{
         color: black;
         background-color: rgb(236, 228, 228);
-        padding: 16px ;
+        padding: 10px ;
         border-radius: 10px;
-        width: 100%;
+        width: 90%;
         margin-bottom: 10px;
         border: white;
         display: flex;
@@ -221,14 +292,9 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .navigate .serve a{
-        color: black;
-        padding: 30px;
-        text-align: center;
-    }
 
     .navigate .serve img{
-        width: 30px;
+        width: 20px;
         margin-right: 20px;
     }
 

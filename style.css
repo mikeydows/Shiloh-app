@@ -407,12 +407,12 @@ footer{
         margin: 10px 20px;
     }
 
-    .navigate .serve button{
+    .navigate .serve a{
         color: black;
         background-color: rgb(236, 228, 228);
-        padding: 16px ;
+        padding: 10px ;
         border-radius: 10px;
-        width: 100%;
+        width: 90%;
         margin-bottom: 10px;
         border: white;
         display: flex;
@@ -420,14 +420,9 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .navigate .serve a{
-        color: black;
-        padding: 30px;
-        text-align: center;
-    }
 
     .navigate .serve img{
-        width: 30px;
+        width: 20px;
         margin-right: 20px;
     }
 
