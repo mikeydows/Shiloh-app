@@ -299,7 +299,7 @@ footer{
     }
 
     .navigate p{
-        transform: translateY(160px);
+        transform: translateY(300px);
         margin-left: 27px;
         font-size: 1.2em;
     }
