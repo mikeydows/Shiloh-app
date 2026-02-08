@@ -24,7 +24,7 @@ navbar.addEventListener("animationend", () => {
 let startX = 0;
 navbar.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
-    let diff = startX - moveX;
+    let diff = startX - moveX;]\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
     if(diff > 70){
         closenavbar();
@@ -35,3 +35,30 @@ document.addEventListener("touchstart", (e) => {
         openNavbar();
     }
 })
+
+
+const photo = document.getElementById("photo");
+const graphic = document.getElementById("graphic");
+const web = document.getElementById("web");
+const photography = document.getElementById("photography");
+const graphicPage = document.getElementById("graphicdesign")
+
+function showPhotographyPage(){
+    if(window.getComputedStyle(photography) === "none"){
+        photo.style.backgroundColor = "black";
+        photography.style.display = "flex";
+        graphicPage.style.display = "none";
+    }
+}
+
+photo.addEventListener("click", showPhotographyPage)
+
+function showGraphicPage(){
+    if(window.getComputedStyle(graphicPage) === "none"){
+        graphic.style.backgroundColor = "black";
+        graphicPage.style.display = "flex";
+        photographye.style.display = "none";
+    }
+}
+
+graphic.addEventListener("click", showGraphicPage)

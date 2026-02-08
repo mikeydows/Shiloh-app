@@ -72,6 +72,73 @@ header .logo{
     background-color: white;
 }
 
+.portfolioPage{
+    background: radial-gradient(grey, black);
+    width: 93%;
+    padding: 50px;
+    text-align: center;
+}
+
+.portfolioPage .porthead{
+    color: white;
+    height: 200px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.portfolioPage .porthead h1{
+    font-weight: bold;
+    color: gold;
+    font-size: 5em;
+}
+
+.buttons{
+    background-color: grey;
+    margin: 55px auto;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+ .buttons button{
+    background-color: rgb(83, 82, 82);
+    color: white;
+    font-weight: 1.1em;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    transition: all o.2s;
+}
+
+.buttons button:hover{
+    background-color: black;
+    transition: all 0.2s;
+}
+
+.images{
+    margin: 100px auto;
+    text-align: center;
+}
+
+
+.images .photography, .graphic{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 100px auto;
+    gap: 1em;
+}
+
+#graphicdesign{
+    display: none;
+}
+
+.images img{
+    width: 23%;
+}
 footer{
     margin: 0;
     position: relative;
