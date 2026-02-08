@@ -82,7 +82,6 @@ header .logo{
 .portfolioPage .porthead{
     color: white;
     height: 200px;
-    width: 50%;
     margin: 10px auto;
 }
 
@@ -191,4 +190,209 @@ footer{
     body{
         background-color: white;
     }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar2{
+        display: block;
+        z-index: 2;
+        width: 10%;
+    }
+
+    .navbar2 img{
+        width: 26px;
+        text-align: right;
+        position: relative;
+        right: -20px;
+        cursor: pointer;
+    }
+
+    header{
+        backdrop-filter: blur(0);
+        background-color: white;
+        width: 100%;
+    }
+
+    header .logo{
+        position: relative;
+        left: -20px;
+        width: 51%;
+        text-align: left;
+        align-items: center;
+        color: black;
+    }
+
+    header .logo img{
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(0 1px 0.1px);
+    }
+
+    .portfolioPage{
+        width: 97%;
+        padding: 5px;
+    }
+
+    .portfolioPage .porthead{
+        height: 100px;
+    }
+
+    .portfolioPage .porthead h1{
+        font-size: 2em;
+        margin-top: 100px;
+    }
+
+    .buttons{
+        width: 90%;
+    }
+
+    .images .photography, .graphic{
+        width: 90%;
+    }
+
+    .images img{
+        width: 40%;
+    }
+
+       footer{
+        background: #161515;
+    }
+    
+    .footer{
+        display: block;
+        width: 90%;
+        padding: 5px;
+    }
+
+    .footer .page{
+        margin: 20px auto;
+
+        width: 90%;
+    }
+
+    .footer .logo img{
+        width: 70px;
+    }
+
+    .footer .logo h1{
+        color: gold;
+        font-size: 2em;
+    }
+
+    @keyframes open {
+        from{left:-300px}
+        to{left:0}
+    }
+
+    @keyframes close {
+        from{left:0px}
+        to{left: -300px}
+    }
+ 
+    .navigate{
+        background-color: white;
+        border-radius: 0 30px 30px 0;
+        box-shadow: 0 0 3px 0.1px;
+        width: 70%;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        height: 100%;
+        margin: 0 auto;
+        left: -300px;
+        animation-duration: 0.4s;
+        animation-fill-mode: forwards;
+    }
+
+    .navigate .serve{
+        margin: 10px 20px;
+    }
+
+.navigate .serve a{
+        color: black;
+        background-color: rgb(236, 228, 228);
+        padding: 10px ;
+        border-radius: 10px;
+        width: 90%;
+        margin-bottom: 10px;
+        border: white;
+        display: flex;
+        font-size: 1.1em;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigate .serve img{
+        width: 20px;
+        margin-right: 20px;
+    }
+
+    .navigate p{
+        transform: translateY(300px);
+        margin-left: 27px;
+        font-size: 1.2em;
+        color: black;
+    }
+
+    .navigate .socials{
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        margin: 20px auto;
+        text-align: center;
+        left: 10%;
+    }
+
+    .navigate #close{
+        width: 30px;
+        margin: 30px;
+        cursor: pointer;
+    }
+
+    .navigate .socials img{
+        height: 30px;
+    }
+
+    .open {
+        display: block;
+        animation-name: slideIn;
+    }
+
+    .close {
+        animation-name: slideOut;
+    }
+
+    #navbar.open {
+        display: block;
+        animation-name: slideIn;
+    }
+
+    #navbar.close {
+        animation-name: slideOut;
+    }
+
+    #overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        display: none;
+        z-index: 1;
+        backdrop-filter: blur(25px);
+    }
+
+
+    @keyframes slideIn {
+        from { left: -300px; }
+        to { left: 0; }
+    }
+
+    @keyframes slideOut {
+        from { left: 0; }
+        to { left: -300px; }
+    }
+
 }
