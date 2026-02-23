@@ -364,7 +364,7 @@ footer{
         padding: 10px;
     }
 
-    .footer .page{
+    .footer .page, .tandc{
         margin: 0 auto 20px auto;
         width: 90%;
     }

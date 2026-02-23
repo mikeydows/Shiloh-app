@@ -519,7 +519,7 @@ footer{
         padding: 5px;
     }
 
-    .footer .page{
+    .footer .page, .tandc{
         margin: 20px auto;
 
         width: 90%;
